@@ -1,4 +1,4 @@
-# args = argunentos
+# args = argumentos
 #kwargs = keyword arguments (argumentos de palavras-chave)
 
 def meu_metodo(arg1, arg2):
