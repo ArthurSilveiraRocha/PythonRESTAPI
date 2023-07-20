@@ -15,5 +15,6 @@ cria_hotel = "INSERT INTO hoteis VALUES ('foxtrot', 'Foxtrot Hotel', 4.3, 345.90
 cursor.execute(cria_tabela)
 cursor.execute(cria_hotel)
 
+
 connection.commit()
 connection.close()
