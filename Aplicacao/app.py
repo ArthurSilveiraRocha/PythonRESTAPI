@@ -11,7 +11,7 @@ def cria_banco():
     banco.create_all()
 
 api.add_resource(Hoteis, '/hoteis')
-api.add_resource(Hotel, '/hoteis/<string:hotel_id>')
+api.add_resource(Hotel,    '/hoteis/<string:hotel_id>')
 
 if __name__ == '__main__':
     from sql_aclhemy import banco
