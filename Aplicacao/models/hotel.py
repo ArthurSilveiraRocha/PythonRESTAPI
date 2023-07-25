@@ -1,4 +1,10 @@
-class HotelModel:
+from sql_aclhemy import banco
+
+class HotelModel(banco.Model):
+    __tablename__ = 'hoteis' 
+    hotel_id = banco.Column(banco.String),
+    primary_key=True
+    nome = banco.Column()
     def __init__(self, hotel_id, nome, estrelas, diaria, cidade):
         self.hotel_id = hotel_id
         self.nome = nome
