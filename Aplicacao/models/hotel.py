@@ -1,10 +1,12 @@
 from sql_aclhemy import banco
 
+
 class HotelModel(banco.Model):
-    __tablename__ = 'hoteis' 
-    hotel_id = banco.Column(banco.String),
-    primary_key=True
+    __tablename__ = "hoteis"
+    hotel_id = (banco.Column(banco.String),)
+    primary_key = True
     nome = banco.Column()
+
     def __init__(self, hotel_id, nome, estrelas, diaria, cidade):
         self.hotel_id = hotel_id
         self.nome = nome
@@ -14,10 +16,9 @@ class HotelModel(banco.Model):
 
     def json(self):
         return {
-            'hotel_id': self.hotel_id,
-            'nome': self.nome,
-            'estrelas': self.estrelas,
-            'diaria': self.diaria,
-            'cidade': self.cidade
-
+            "hotel_id": self.hotel_id,
+            "nome": self.nome,
+            "estrelas": self.estrelas,
+            "diaria": self.diaria,
+            "cidade": self.cidade,
         }
