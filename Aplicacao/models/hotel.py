@@ -5,8 +5,8 @@ class HotelModel(banco.Model):
     __tablename__ = "hoteis"
     hotel_id = banco.Column(banco.String, primary_key=True)
     nome = banco.Column(banco.String(80))
-    estrelas = banco.Column(banco.gloat(precision=1))
-    diaria = banco.Columns(banco.float(precision=2))
+    estrelas = banco.Column(banco.Float(precision=1))
+    diaria = banco.Column(banco.Float(precision=2))
     cidade = banco.Column(banco.String(40))
 
     def __init__(self, hotel_id, nome, estrelas, diaria, cidade):
