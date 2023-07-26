@@ -10,7 +10,7 @@ cria_tabela = "CREATE TABLE IF NOT EXISTS hoteis\
     diaria real,\
     cidade text)"
 
-cria_hotel = "INSERT INTO hoteis VALUES ('foxtrot', 'Foxtrot Hotel', 4.3, 345.90, 'Rio de janeiro')"
+cria_hotel = "INSERT INTO hoteis VALUES ('echo', 'Echo Hotel', 4.9, 445.90, 'Rio de janeiro')"
 
 cursor.execute(cria_tabela)
 cursor.execute(cria_hotel)
